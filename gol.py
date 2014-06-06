@@ -79,7 +79,7 @@ class newgame:
 		for i in cellstoflip:
 			self.board[i[0]][i[1]] = self.flip(self.board[i[0]][i[1]])
 			
-def main(): #-b -c -s -d -a
+def main():
 	try:
 		args = ' '.join(sys.argv[1:]).split()
 		optlist, args = getopt.getopt(args, 'b:g:s:d:a:')
